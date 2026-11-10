@@ -80,7 +80,7 @@
       "@type": "VeterinaryCare",
       "name": "Dra. Eliane Senger - Medicina Felina",
       "description": "Veterinária especializada em Medicina Felina com atendimento domiciliar em Joinville, SC. Certificação Cat Friendly Professional pela AAFP.",
-      "image": "https://placehold.co/300x300/80cbc4/FFFFFF?text=Dra.+Eliane",
+      "image": "https://www.vidadegato.com/images/dra-eliane-senger-gato-1200.jpg",
       "telephone": "+55-47-99282-1447",
       "email": "esr@vidadegato.com",
       "address": {
@@ -100,6 +100,7 @@
       "medicalSpecialty": "Veterinary",
       "availableService": [
         {"@type": "MedicalProcedure", "name": "Medicina Felina (Clínica Geral)"},
+        {"@type": "MedicalProcedure", "name": "Consulta e Orientação Pediátrica Felina"},
         {"@type": "MedicalProcedure", "name": "Atendimento Domiciliar Veterinário"},
         {"@type": "MedicalProcedure", "name": "Consultoria Online (FIV, FELV, PIF)"},
         {"@type": "MedicalProcedure", "name": "Vacinação de Gatos"},
@@ -246,12 +247,19 @@
             </div>
             <!-- Coluna de Imagem -->
             <div class="md:w-1/2">
-                <!-- Imagem principal - Substituir por uma foto real -->
-                <img src="https://placehold.co/600x400/b2dfdb/FFFFFF?text=Atendimento+Domiciliar+Felino"
-                     alt="Dra. Eliane Senger realizando atendimento veterinário domiciliar em um gato"
-                     width="600" height="400"
-                     fetchpriority="high"
-                     class="rounded-lg shadow-xl w-full h-auto">
+                <!-- Imagem principal -->
+                <picture>
+                    <source type="image/webp"
+                            srcset="images/dra-eliane-senger-gato-600.webp 600w, images/dra-eliane-senger-gato-1200.webp 1200w"
+                            sizes="(min-width: 768px) 50vw, 100vw">
+                    <img src="images/dra-eliane-senger-gato-1200.jpg"
+                         srcset="images/dra-eliane-senger-gato-600.jpg 600w, images/dra-eliane-senger-gato-1200.jpg 1200w"
+                         sizes="(min-width: 768px) 50vw, 100vw"
+                         alt="Dra. Eliane Senger, veterinária de gatos em Joinville, segurando e beijando um gato de pelo longo"
+                         width="1200" height="800"
+                         fetchpriority="high"
+                         class="rounded-lg shadow-xl w-full h-auto">
+                </picture>
             </div>
         </div>
     </section>
@@ -273,25 +281,31 @@
                 </div>
 
 
-                <!-- Card 2: Atendimento Domiciliar -->
+                <!-- Card 2: Pediatria -->
+                <div class="bg-gray-50 rounded-lg shadow-lg p-8 transform hover:scale-105 transition duration-300">
+                    <h3 class="text-xl font-bold text-brand-teal-900 mb-3">Consulta e Orientação Pediátrica</h3>
+                    <p class="text-gray-700">Acompanhamento completo dos filhotes desde os primeiros dias de vida: avaliação do desenvolvimento, orientação sobre alimentação, vacinação, vermifugação e socialização, para que seu gatinho cresça saudável e seguro.</p>
+                </div>
+
+                <!-- Card 3: Atendimento Domiciliar -->
                 <div class="bg-gray-50 rounded-lg shadow-lg p-8 transform hover:scale-105 transition duration-300">
                     <h3 class="text-xl font-bold text-brand-teal-900 mb-3">Atendimento Domiciliar</h3>
                     <p class="text-gray-700">Todo o cuidado veterinário no conforto e segurança do seu lar, minimizando o estresse do transporte e da espera em clínicas.</p>
                 </div>
 
-                <!-- Card 3: FIV / FELV / PIF -->
+                <!-- Card 4: FIV / FELV / PIF -->
                 <div class="bg-gray-50 rounded-lg shadow-lg p-8 transform hover:scale-105 transition duration-300">
                     <h3 class="text-xl font-bold text-brand-teal-900 mb-3">Consultoria FIV / FELV / PIF</h3>
                     <p class="text-gray-700">Orientação especializada online para tutores e pacientes diagnosticados com doenças infecciosas, focando em qualidade de vida e manejo.</p>
                 </div>
 
-                <!-- Card 4: Exames e Vacinas -->
+                <!-- Card 5: Exames e Vacinas -->
                 <div class="bg-gray-50 rounded-lg shadow-lg p-8 transform hover:scale-105 transition duration-300">
                     <h3 class="text-xl font-bold text-brand-teal-900 mb-3">Exames e Vacinas em Casa</h3>
                     <p class="text-gray-700">Realização de exames de sangue, urina e outros, além da atualização do protocolo vacinal, tudo sem sair de casa.</p>
                 </div>
 
-                <!-- Card 5: Consultoria para Veterinários -->
+                <!-- Card 6: Consultoria para Veterinários -->
                 <div class="bg-gray-50 rounded-lg shadow-lg p-8 transform hover:scale-105 transition duration-300">
                     <h3 class="text-xl font-bold text-brand-teal-900 mb-3">Consultoria para Veterinários</h3>
                     <p class="text-gray-700">Mentoria e discussão de casos clínicos complexos em medicina felina para colegas veterinários, visando a excelência no atendimento.</p>
@@ -307,12 +321,17 @@
             <div class="flex flex-col md:flex-row items-center gap-12">
                 <!-- Imagem -->
                 <div class="md:w-1/3 text-center">
-                    <img src="https://placehold.co/300x300/80cbc4/FFFFFF?text=Dra.+Eliane"
-                         alt="Dra. Eliane Senger, veterinária especialista em medicina felina em Joinville."
-                         width="300" height="300"
-                         loading="lazy"
-                         class="rounded-full shadow-xl mx-auto border-4 border-white"
-                         style="object-fit: cover;">
+                    <picture>
+                        <source type="image/webp"
+                                srcset="images/logo-vida-de-gato-300.webp 1x, images/logo-vida-de-gato-600.webp 2x">
+                        <img src="images/logo-vida-de-gato-300.png"
+                             srcset="images/logo-vida-de-gato-300.png 1x, images/logo-vida-de-gato-600.png 2x"
+                             alt="Logo Vida de Gato: coração com a silhueta de um gato"
+                             width="300" height="300"
+                             loading="lazy"
+                             class="rounded-full shadow-xl mx-auto border-4 border-white"
+                             style="object-fit: cover;">
+                    </picture>
                 </div>
                 <!-- Texto -->
                 <div class="md:w-2/3">
@@ -324,12 +343,19 @@
                         Sua paixão é proporcionar um atendimento de excelência, focado no bem-estar e na saúde dos pacientes felinos, desde a rotina até casos complexos de doenças infecciosas como FELV, FIV e PIF.
                     </p>
                     <!-- Selo Cat Friendly -->
-                    <div class="bg-white p-4 rounded-lg shadow-md flex items-center gap-4 mt-6">
-                        <img src="https://placehold.co/80x80/b2dfdb/004d40?text=AAFP"
-                             alt="Selo AAFP Cat Friendly Professional"
-                             width="80" height="80"
-                             loading="lazy"
-                             class="w-20 h-20">
+                    <div class="bg-white p-4 rounded-lg shadow-md flex flex-col sm:flex-row items-center gap-4 mt-6">
+                        <picture class="shrink-0">
+                            <source type="image/webp"
+                                    srcset="images/selo-cat-friendly-veterinarian-200.webp 200w, images/selo-cat-friendly-veterinarian-400.webp 400w, images/selo-cat-friendly-veterinarian-480.webp 480w"
+                                    sizes="240px">
+                            <img src="images/selo-cat-friendly-veterinarian-400.png"
+                                 srcset="images/selo-cat-friendly-veterinarian-200.png 200w, images/selo-cat-friendly-veterinarian-400.png 400w, images/selo-cat-friendly-veterinarian-480.png 480w"
+                                 sizes="240px"
+                                 alt="Selo Cat Friendly Veterinarian - Feline Veterinary Medical Association"
+                                 width="240" height="97"
+                                 loading="lazy"
+                                 class="w-60 h-auto">
+                        </picture>
                         <div>
                             <h4 class="font-bold text-brand-teal-800">Cat Friendly Veterinary Professional</h4>
                             <p class="text-gray-600">Certificada pela AAFP (American Association of Feline Practitioners), garantindo um manejo de baixo estresse e uma experiência positiva para o seu gato.</p>
